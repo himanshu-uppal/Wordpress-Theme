@@ -1,0 +1,1185 @@
+<html>
+<head>
+  <title>lifeinsidebraces
+  </title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{ route('image', 'favicon.png') }}" type="image/x-icon"/>
+  
+ 
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://use.fontawesome.com/2b18a9f74f.js"></script>
+  <style>
+ body{
+    font-family: 'Roboto Slab', serif;
+  }
+  a{
+  color: #000 !important;
+  text-decoration: none !important;
+
+}
+a:hover,
+a:focus,
+a:active{
+  color:  #FBC02D !important;
+  text-decoration: none !important;
+}
+a:visited{
+  color: #000;
+  text-decoration: none !important;
+
+}
+.post-categories a:hover,
+.post-categories a:focus,
+.post-categoriesa:active{
+  color:  #FF5722 !important;
+  text-decoration: none !important;
+}
+.post-content a{
+  color: #000 !important;
+  text-decoration: none !important;
+  font-weight: bold;
+
+}
+
+.post-content a:hover,
+.post-contenta:focus,
+.post-content a:active{
+  color:  #FBC02D !important;
+  text-decoration: none !important;
+}
+.post-content a:visited{
+  color: #000;
+  text-decoration: none !important;
+}
+
+
+
+
+
+  .header-area {
+    width: 100%;
+    background-color: #ECEFF1;
+  
+    
+  }
+  .container{
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  .footer-area{
+    margin-top: 5%;
+    
+    
+    width: 100%;
+    background-color: #eee;
+    top:0;
+    left:0;
+    
+  }
+  .page-image-area{
+  width:100%}
+  .post-area {
+    width: 100%;
+    min-height: 400px;
+    
+  }
+  .page-title{
+    margin-left: 3%;
+    
+
+    padding: 2% 2% 2% 0;
+    
+  }
+  .page-logo{
+    display: inline-block;
+    margin-right: 2%;
+  }
+  .title-image{
+    padding: 0.3%;
+  }
+  .title-image img{
+    width: 500px;
+    height: 150px;
+  }
+  .page-header{
+    width: 50%;   
+    display: inline-block;
+  }
+  .primary-container{
+    clear: both;
+    
+    width: 75%;
+    float: left;
+
+
+    
+  }
+  .secondary-container{
+
+    width: 25%;
+    float: right;
+    
+    
+  }
+  .content{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2%;
+  }
+  .posts{
+    padding-right: 4%;
+  }
+  .the-post {
+    /*background-color: #eee;*/
+    padding: 3%;
+    margin-bottom: 2%;
+  }
+  .post-title{
+    margin: 0;
+  }
+  .post-meta{
+    margin-top: 5px;
+        color: rgba(0,0,0,.54);
+
+  }
+  .post-body{
+    padding: 2%;
+    
+    text-align: justify;
+
+  }
+  .post-categories{
+    margin: 2% 0 2% 0;
+
+  }
+  .post-content img{
+    width: 650px;
+    height:650px;
+    padding: 5%;
+    
+   
+    
+    
+
+
+  }
+  .post-share{
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-right: 3%;
+    padding:1%;
+
+  }
+  .post-action{
+    float: left;
+    width: 50%;
+    text-align: left;
+
+  }
+  .post-like{
+    float: left;
+    padding: 1%;
+  }
+  .post-comment{
+    padding: 1%;
+
+  }
+  .post-footer{
+    clear: both;
+    padding-top: 2%;
+
+  }
+  .sidebar{
+    padding: 2%;
+    border: solid 0.5px #eeeeee;
+  }
+  .sidebar-search-area{
+
+  }
+  /*.search-input input{
+
+    border: 1px solid #eee;
+    color: #212121;
+    color: rgba(0,0,0,.87);
+    font-size: 14px;
+    padding: 8px 8px 8px 40px;
+    width: 100%;
+   
+    background: url("https://www.gstatic.com/images/icons/material/system/1x/search_grey600_24dp.png") 8px center no-repeat;
+  }*/
+
+  .sidebar-content{
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 1px 0 white;
+    margin-bottom: 0;
+    padding: 14px 0;
+    min-height: 20px;
+
+  }
+  .categories-label{
+    text-align: center;
+    
+  }
+  .categories{
+    
+    display: none;
+  }
+  .categories-list{
+    list-style-type: none;
+  }
+  /*.tags-label{
+    border :solid 0.5px #eeeeee;
+  }
+  .tags{
+    display: none;
+  }*/
+  .years{
+    display:none;
+  }
+  .months{
+    display: :none;
+  }
+  
+  .sidebar-share{
+    text-align: center;
+    
+    
+    padding: 2%;
+    word-spacing: 10px;
+
+  }
+  .sidebar-profile{
+
+  }
+  
+  .footer-tab{
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    padding: 1%;
+    
+  
+
+  }
+  .copyright{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .profile-area-1{
+    background-color: #7e7e7e;
+    width: 45%;
+    
+    padding: 1%;
+    color: #fff;
+    float: left;
+
+  }
+  .profile-area-2{
+    background-color: #7e7e7e;
+    width: 45%;
+    float: right;
+    padding: 1%;
+    color: #fff;
+
+  }
+  .profile-pic{
+    
+    display: inline-block;
+
+    padding: 1%;
+    text-align: center;
+    
+
+  }
+  .profile-pic img{
+    border-radius: 50%;
+    width: 150px;
+
+  }
+  .profile-content{
+    
+    display: inline-block;
+     padding: 1%;
+
+  }
+  .name{
+    color: #e4e4e4;
+    font-size: 16px;
+  }
+  .designation{
+    color: #3f3f3f;
+
+  }
+  .profile-content i{
+    color: #FBC02D;
+  }
+  .footer-share-menu{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    word-spacing: 10px;
+    padding: 1%;
+  }
+  .footer-area hr {
+    /* margin-top: 23px; */
+    /* margin-bottom: 23px; */
+    /* border: 0; */
+    border-top: 2px solid #eeeeee !important;
+  }
+  
+
+
+
+
+ul.pager {
+    list-style-type: none;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 942px) and (max-width: 1170px) {
+    
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+   
+   
+
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+
+}
+@media only screen and (max-width: 479px) {
+  
+  .container{
+    max-width: 100%;
+    
+  }
+  
+  .primary-container{
+    clear: both;
+    
+    width: 95%;
+    margin: 0 auto;
+    
+
+
+    
+  }
+  .secondary-container{
+
+    width: 95%;
+    margin: 0 auto;
+    
+    
+    
+  }
+  .post-content img{
+    width: 300px;
+    height:300px;
+    padding: 5%;   
+
+
+  }
+  .title-image img{
+    width: 300px;
+    height: 100px;
+  }
+  .profile-pic img{
+    
+    border-radius: 50%;
+    width: 120px;
+  
+
+  }
+
+    
+
+        
+
+
+
+}
+
+
+
+
+  </style>
+
+  
+</head>
+<body>
+  
+  <div class="header-area">
+    <div class="container">
+      <div class="page-title">
+        <div class="page-logo">
+           <a href=""><img id="logo" width="150px" heigth="200px"  src="c.png"> </a>
+        </div>
+        <div class="page-header">
+          <div class="title-image">
+          <a href=""><img id="page-title"  src="c.png"></a>
+        </div>
+        </div>
+      </div>
+      <div class="quote-area">
+      	<div class="quote">Hello Hello</div>
+      </div> 
+    </div>
+  </div>
+  <div class="page-image-area">
+  <img src="c.png" width="1500px" height="300px">
+  </div>
+  <div class="post-content-area"><!-- post-content-area -->
+
+
+  <div class="container">
+
+    <div id="content" class="site-content">
+<!-- Slider-Container -->
+
+<!-- Primary-Container -->
+<div class="primary-container"><!-- posts container -->
+  <div id="primary" class="content-area ">
+    <main id="main" class="site-main" role="main">
+
+       <div class="the-post"> 
+<article id="post-148" class="post-148 post type-post status-publish format-gallery has-post-thumbnail hentry category-biology category-fun category-nature category-science category-social category-technology post_format-post-format-gallery">
+  <header class="entry-header">
+  
+  <div class="post-meta-time">July 21, 2016 </div>
+
+    <h2 class="entry-title"><a href="http://localhost/wordpress/2016/07/21/easy-generation/" rel="bookmark">Easy generation</a></h2>
+    <div class="entry-meta">
+      <div class="post-info">
+      
+
+
+                <div class="post-author">
+            <div class="icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="post-meta-text">by &nbsp;
+              <a href="http://localhost/wordpress/author/himanshu/">
+                himanshu</a>
+            </div>
+          </div>
+      
+                <div class="post-category">
+          <div class="icon">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+          </div>
+          <div class="post-meta-text">
+
+          <a href="http://localhost/wordpress/category/technology/biology/">Biology</a>         </div>
+        </div>
+                <div class="post-top-comments">
+          <div class="icon">
+            <i class="fa fa-comment-o"></i>
+          </div>
+          <div class="post-meta-text">
+            <a href="http://localhost/wordpress/2016/07/21/easy-generation/#comments">&nbsp; Comments </a>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div><!-- .entry-meta -->
+  </header><!-- .entry-header -->
+  <div class="entry-content">
+
+              <div class="post-gallery-image slick-initialized slick-slider" style="visibility: visible;"><div class="slick-prev-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-left fa-2x" style="color:#fff"></i></div>
+                          <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 5376px; transform: translate3d(-672px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/soup-918422_1280-1000x600.jpg" alt="">               </div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/pasta-1463934_1280-1000x600.jpg" alt="">               </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/soup-1429735_1280-1000x600.jpg" alt="">              </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/sweets-865095_1280-1000x600.jpg" alt="">               </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-1000x600.jpg" alt="">               </div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/wineglass-553467_1280-1000x600.jpg" alt="">              </div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/soup-918422_1280-1000x600.jpg" alt="">               </div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/pasta-1463934_1280-1000x600.jpg" alt="">               </div></div></div>                                                                               <div class="slick-next-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-right fa-2x" style="color:#fff"></i></div></div>
+          <p>Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.&nbsp;Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.</p>
+<div class="read-more"><a class="more-link" href="http://localhost/wordpress/2016/07/21/easy-generation/">Read More</a></div>
+  </div><!-- .entry-content -->
+
+  <footer class="entry-footer ">
+
+
+  <br>
+    <div class="post-share-area ">
+    <div class="post-share-footer " >
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost/wordpress/2016/07/21/easy-generation/"><i class="fa fa-facebook-square " aria-hidden="true"> </i></a>
+    <a href="https://twitter.com/intent/tweet?url=http://localhost/wordpress/2016/07/21/easy-generation/" target="_blank"><i class="fa fa-twitter " aria-hidden="true"> </i></a>
+
+    <a href="https://plus.google.com/share?url=http://localhost/wordpress/2016/07/21/easy-generation/" target="_blank"><i class="fa fa-google-plus " aria-hidden="true"> </i></a>
+
+        <a data-hint="Pinterest" data-pin-do="skipLink" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost/wordpress/2016/07/21/easy-generation/&amp;media=http://localhost/wordpress/wp-content/uploads/2016/07/pasta-984411_1280.jpg&amp;description=Easy generation"><i class="fa fa-pinterest" aria-hidden="true"> </i></a>
+
+  </div>
+    </div>
+  
+
+
+
+  
+  </footer><!-- .entry-footer -->
+
+
+
+
+
+</article><!-- #post-## -->
+        </div><br>  <div class="the-post"> 
+<article id="post-146" class="post-146 post type-post status-publish format-standard has-post-thumbnail hentry category-biology category-fun category-nature category-science category-social category-technology">
+  <header class="entry-header">
+  
+  <div class="post-meta-time">July 21, 2016 </div>
+
+    <h2 class="entry-title"><a href="http://localhost/wordpress/2016/07/21/146/" rel="bookmark">site structure</a></h2>
+    <div class="entry-meta">
+      <div class="post-info">
+      
+
+
+                <div class="post-author">
+            <div class="icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="post-meta-text">by &nbsp;
+              <a href="http://localhost/wordpress/author/himanshu/">
+                himanshu</a>
+            </div>
+          </div>
+      
+                <div class="post-category">
+          <div class="icon">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+          </div>
+          <div class="post-meta-text">
+
+          <a href="http://localhost/wordpress/category/technology/biology/">Biology</a>         </div>
+        </div>
+                <div class="post-top-comments">
+          <div class="icon">
+            <i class="fa fa-comment-o"></i>
+          </div>
+          <div class="post-meta-text">
+            <a href="http://localhost/wordpress/2016/07/21/146/#comments">&nbsp; Comments </a>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div><!-- .entry-meta -->
+  </header><!-- .entry-header -->
+  <div class="entry-content">
+
+              <a href="http://localhost/wordpress/2016/07/21/146/" title="site structure">
+            <img width="1280" height="853" src="http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="jaffa-1329679_1280" srcset="http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280.jpg 1280w, http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-300x200.jpg 300w, http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-768x512.jpg 768w, http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-1024x682.jpg 1024w, http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-750x500.jpg 750w" sizes="(max-width: 1280px) 100vw, 1280px">         </a>
+
+
+
+
+        <p>Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.&nbsp;Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.&nbsp;Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.Easy generation and deletion of blog posts, pages, and sub pages for developers. Full site structure in one click.</p>
+  </div><!-- .entry-content -->
+
+  <footer class="entry-footer ">
+
+
+  <br>
+    <div class="post-share-area ">
+    <div class="post-share-footer " >
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost/wordpress/2016/07/21/146/"><i class="fa fa-facebook-square " aria-hidden="true"> </i></a>
+    <a href="https://twitter.com/intent/tweet?url=http://localhost/wordpress/2016/07/21/146/" target="_blank"><i class="fa fa-twitter " aria-hidden="true"> </i></a>
+
+    <a href="https://plus.google.com/share?url=http://localhost/wordpress/2016/07/21/146/" target="_blank"><i class="fa fa-google-plus " aria-hidden="true"> </i></a>
+
+        <a data-hint="Pinterest" data-pin-do="skipLink" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost/wordpress/2016/07/21/146/&amp;media=http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280.jpg&amp;description=site structure"><i class="fa fa-pinterest" aria-hidden="true"> </i></a>
+
+  </div>
+    </div>
+  
+
+
+
+  
+  </footer><!-- .entry-footer -->
+
+
+
+
+
+</article><!-- #post-## -->
+        </div><br>  <div class="the-post"> 
+<article id="post-131" class="post-131 post type-post status-publish format-gallery has-post-thumbnail hentry category-biology category-fun category-nature category-science category-social category-technology category-uncategorized post_format-post-format-gallery">
+  <header class="entry-header">
+  
+  <div class="post-meta-time">July 18, 2016 </div>
+
+    <h2 class="entry-title"><a href="http://localhost/wordpress/2016/07/18/gallery-test/" rel="bookmark">gallery Test</a></h2>
+    <div class="entry-meta">
+      <div class="post-info">
+      
+
+
+                <div class="post-author">
+            <div class="icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="post-meta-text">by &nbsp;
+              <a href="http://localhost/wordpress/author/himanshu/">
+                himanshu</a>
+            </div>
+          </div>
+      
+                <div class="post-category">
+          <div class="icon">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+          </div>
+          <div class="post-meta-text">
+
+          <a href="http://localhost/wordpress/category/technology/biology/">Biology</a>         </div>
+        </div>
+                <div class="post-top-comments">
+          <div class="icon">
+            <i class="fa fa-comment-o"></i>
+          </div>
+          <div class="post-meta-text">
+            <a href="http://localhost/wordpress/2016/07/18/gallery-test/#comments">&nbsp; Comments </a>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div><!-- .entry-meta -->
+  </header><!-- .entry-header -->
+  <div class="entry-content">
+
+              <div class="post-gallery-image slick-initialized slick-slider" style="visibility: visible;"><div class="slick-prev-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-left fa-2x" style="color:#fff"></i></div>
+                          <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 4704px; transform: translate3d(-672px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/salmon-1312372_1280-1000x600.jpg" alt="">              </div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide10" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/fruit-1523726_1280-1000x600.jpg" alt="">               </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/poached-eggs-on-toast-739401_1280-1000x600.jpg" alt="">              </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide12" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/risotto-421391_1280-1000x600.jpg" alt="">              </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide13" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/food-801888_1280-1000x600.jpg" alt="">               </div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide14" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/salmon-1312372_1280-1000x600.jpg" alt="">              </div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 672px;">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/07/fruit-1523726_1280-1000x600.jpg" alt="">               </div></div></div>                                                                 <div class="slick-next-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-right fa-2x" style="color:#fff"></i></div></div>
+          <p>FakerPress is a clean way to generate fake and dummy content to your WordPress, great for developers who need testing&nbsp;FakerPress is a clean way to generate fake and dummy content</p>
+<p>FakerPress is a clean way to generate fake and dummy content to your WordPress, great for developers who need testing&nbsp;FakerPress is a clean way to generate fake and dummy content</p>
+<p>FakerPress is a clean way to generate fake and dummy content to your WordPress, great for developers who need testing&nbsp;FakerPress is a clean way to generate fake and dummy content</p>
+<p>FakerPress is a clean way to generate fake and dummy content to your WordPress, great for developers who need testing&nbsp;FakerPress is a clean way to generate fake and dummy content</p>
+  </div><!-- .entry-content -->
+
+  <footer class="entry-footer ">
+
+
+  <br>
+    <div class="post-share-area ">
+    <div class="post-share-footer ">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost/wordpress/2016/07/18/gallery-test/"><i class="fa fa-facebook-square " aria-hidden="true"> </i></a>
+    <a href="https://twitter.com/intent/tweet?url=http://localhost/wordpress/2016/07/18/gallery-test/" target="_blank"><i class="fa fa-twitter " aria-hidden="true"> </i></a>
+
+    <a href="https://plus.google.com/share?url=http://localhost/wordpress/2016/07/18/gallery-test/" target="_blank"><i class="fa fa-google-plus " aria-hidden="true"> </i></a>
+
+        <a data-hint="Pinterest" data-pin-do="skipLink" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost/wordpress/2016/07/18/gallery-test/&amp;media=http://localhost/wordpress/wp-content/uploads/2016/07/poached-eggs-on-toast-739401_1280.jpg&amp;description=gallery Test"><i class="fa fa-pinterest" aria-hidden="true"> </i></a>
+
+  </div>
+    </div>
+  
+
+
+
+  
+  </footer><!-- .entry-footer -->
+
+
+
+
+
+</article><!-- #post-## -->
+        </div><br>      <!-- Add the pagination functions here. -->
+
+<div class="nav-previous alignleft"><a href="http://localhost/wordpress/page/2/">Older posts &gt;&gt;</a></div>
+<div class="nav-next alignright"></div>
+
+
+    
+    </main><!-- #main -->
+  </div><!-- #primary -->
+
+</div><!-- Primary-Container -->
+
+
+
+
+
+
+<div class="secondary-container"><!-- secondary container -->
+  
+
+  <aside id="secondary" class="widget-area" role="complementary">
+    <section id="abt_widget-3" class="widget abt_widget"> <div class="about-us-area"> <h2 class="widget-title">About us</h2>
+        <div class="abt-image">
+            <img src="http://localhost/wordpress/wp-content/uploads/2016/11/chef-cooking_1-1-300x300.jpg">
+        </div>
+        
+            <div class="abt-name">
+                <p>WDXtreme</p>
+            </div>
+        
+        <div class="abt-description">
+            <p>By default, the datepicker calendar opens in a small overlay when the associated text field gains focus. For an inline calendar, simply attach the datepicker to a div or span.</p>
+            
+        </div>
+
+
+        </div>
+
+        </section><section id="recent_post_widget-3" class="widget Recent_Post_Widget">        <div class="recent-post-widget">
+        <h2 class="widget-title">Recent Posts</h2>                <div class="recent-post-sidebar-content clear">
+                    <div class="recent-post-sidebar-title">
+                        <div><a href="http://localhost/wordpress/2016/07/21/146/"> site structure </a></div>
+                      <div class="recent-post-time-content">  <div class="recent-post-time">July 21, 2016 </div></div>
+                    </div>
+
+
+                    <div class="recent-post-sidebar-image">
+                        <a href="http://localhost/wordpress/2016/07/21/146/">
+                            <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-70x70.jpg">
+                        </a>
+
+                    </div>
+
+
+                </div>
+                                <div class="recent-post-sidebar-content clear">
+                    <div class="recent-post-sidebar-title">
+                        <div><a href="http://localhost/wordpress/2016/06/27/bibendum-magna/"> Populate Posts </a></div>
+                      <div class="recent-post-time-content">  <div class="recent-post-time">June 27, 2016 </div></div>
+                    </div>
+
+
+                    <div class="recent-post-sidebar-image">
+                        <a href="http://localhost/wordpress/2016/06/27/bibendum-magna/">
+                            <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/coffee-1497619_1280-70x70.jpg">
+                        </a>
+
+                    </div>
+
+
+                </div>
+                                <div class="recent-post-sidebar-content clear">
+                    <div class="recent-post-sidebar-title">
+                        <div><a href="http://localhost/wordpress/2016/07/18/gallery-test/"> gallery Test </a></div>
+                      <div class="recent-post-time-content">  <div class="recent-post-time">July 18, 2016 </div></div>
+                    </div>
+
+
+                    <div class="recent-post-sidebar-image">
+                        <a href="http://localhost/wordpress/2016/07/18/gallery-test/">
+                            <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/poached-eggs-on-toast-739401_1280-70x70.jpg">
+                        </a>
+
+                    </div>
+
+
+                </div>
+                                <div class="recent-post-sidebar-content clear">
+                    <div class="recent-post-sidebar-title">
+                        <div><a href="http://localhost/wordpress/2016/07/15/nullam-maximus/"> FakerPress </a></div>
+                      <div class="recent-post-time-content">  <div class="recent-post-time">July 15, 2016 </div></div>
+                    </div>
+
+
+                    <div class="recent-post-sidebar-image">
+                        <a href="http://localhost/wordpress/2016/07/15/nullam-maximus/">
+                            <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/still-life-379858_1280-70x70.jpg">
+                        </a>
+
+                    </div>
+
+
+                </div>
+                
+
+        </div>
+        </section><section id="popular_post_widget-8" class="widget Popular_Post_Widget"><h2 class="widget-title">Popular Posts</h2>
+        <div class="popular-post-widget" style="visibility: visible;">
+            <div class="popular-post-sidebar-slider slick-initialized slick-slider"><div class="slick-prev-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-left fa-2x" style="color:#fff"></i></div>
+            
+                        <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 1716px; transform: translate3d(-286px, 0px, 0px);"><div class="popular-post-sidebar-content slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/06/27/jjvfbh/" tabindex="-1">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/food-801888_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="-1">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="-1">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/06/27/jjvfbh/" tabindex="-1"> Dummy Text Shortcode </a>
+                    </div>
+                </div><div class="popular-post-sidebar-content slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide20" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/07/21/146/" tabindex="0">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="0">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="0">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/07/21/146/" tabindex="0"> site structure </a>
+                    </div>
+                </div><div class="popular-post-sidebar-content slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide21" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/07/18/gallery-test/" tabindex="-1">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/poached-eggs-on-toast-739401_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="-1">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="-1">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/07/18/gallery-test/" tabindex="-1"> gallery Test </a>
+                    </div>
+                </div><div class="popular-post-sidebar-content slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide22" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/07/21/easy-generation/" tabindex="-1">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/pasta-984411_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="-1">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="-1">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/07/21/easy-generation/" tabindex="-1"> Easy generation </a>
+                    </div>
+                </div><div class="popular-post-sidebar-content slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide23" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/06/27/jjvfbh/" tabindex="-1">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/food-801888_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="-1">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="-1">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/06/27/jjvfbh/" tabindex="-1"> Dummy Text Shortcode </a>
+                    </div>
+                </div><div class="popular-post-sidebar-content slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 286px;">
+
+                
+                <div class="popular-post-sidebar-image">
+            <a href="http://localhost/wordpress/2016/07/21/146/" tabindex="-1">
+                <img src=" http://localhost/wordpress/wp-content/uploads/2016/07/jaffa-1329679_1280-350x260.jpg">
+            </a>
+                </div>
+                    <div class="popular-post-sidebar-category">
+                        <a href="http://localhost/wordpress/category/technology/biology/" tabindex="-1">Biology</a>, <a href="http://localhost/wordpress/category/fun/" tabindex="-1">fun</a>                    </div>
+                    <div class="popular-post-sidebar-title">
+                        <a href="http://localhost/wordpress/2016/07/21/146/" tabindex="-1"> site structure </a>
+                    </div>
+                </div></div></div>
+
+                
+
+                            
+
+                
+
+                            
+
+                
+
+                            
+
+                
+
+                        <div class="slick-next-button slick-arrow" style="display: block;"><i class="fa  fa-chevron-circle-right fa-2x" style="color:#fff"></i></div></div>
+
+
+        </div>
+        </section><section id="null-instagram-feed-7" class="widget null-instagram-feed"><h2 class="widget-title">Instagram</h2><ul class="instagram-pics instagram-size-thumbnail"><li class=""><a href="//instagram.com/p/BOzEj-flH0-/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/s160x160/c236.0.608.608/15877388_1066619306800739_9025506823423131648_n.jpg" alt="👦" title="👦" class=""></a></li><li class=""><a href="//instagram.com/p/BOwaHG-leFS/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/s160x160/c236.0.608.608/14487382_243393472750267_5658319237215682560_n.jpg" alt="Instagram Image" title="Instagram Image" class=""></a></li><li class=""><a href="//instagram.com/p/BOJ_JMDFvfi/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/s160x160/c257.0.565.565/15534815_147173942433650_3891184290788016128_n.jpg" alt="#momo 🎃" title="#momo 🎃" class=""></a></li><li class=""><a href="//instagram.com/p/BN2KWDgldIL/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/s160x160/c236.0.608.608/15403517_222376434832513_9160349494934503424_n.jpg" alt="#Food #thenthuk #shabhaley #MyHappyTummy 😋" title="#Food #thenthuk #shabhaley #MyHappyTummy 😋" class=""></a></li><li class=""><a href="//instagram.com/p/BN2JpmzFz_e/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/s160x160/sh0.08/e35/c135.0.810.810/15259137_1179587968794355_1396820387970416640_n.jpg" alt="😋😎" title="😋😎" class=""></a></li><li class=""><a href="//instagram.com/p/BN2JdpHFn9J/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/s160x160/sh0.08/e35/15306752_282321205498075_1520546657622556672_n.jpg?ig_cache_key=MTQwMjM0OTk1MzM5ODI0MzE0NQ%3D%3D.2" alt="#CarrotAndWalnut" title="#CarrotAndWalnut" class=""></a></li><li class=""><a href="//instagram.com/p/BMRu20IFO5E/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/s160x160/sh0.08/e35/14723685_143856486084053_6875328800704430080_n.jpg" alt="#bhaiDooj" title="#bhaiDooj" class=""></a></li><li class=""><a href="//instagram.com/p/BEEdI2vphdf/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/s160x160/12976168_673798952757818_1913405009_n.jpg" alt="#bdday #fun #cake #yee" title="#bdday #fun #cake #yee" class=""></a></li><li class=""><a href="//instagram.com/p/BD--hhtphSg/" target="_self" class=""><img src="//scontent-sit4-1.cdninstagram.com/t51.2885-15/s160x160/sh0.08/e35/12479073_1314140995269359_1754397813_n.jpg" alt="#bvicam #good #time #this #pic #with #great #person #mastii #paani  @kirti_jain_25  @amit_pundeer  pani pani 
+@raghu_tayal  yaad h mujhe ;)" title="#bvicam #good #time #this #pic #with #great #person #mastii #paani  @kirti_jain_25  @amit_pundeer  pani pani 
+@raghu_tayal  yaad h mujhe ;)" class=""></a></li></ul><p class="clear"><a href="//instagram.com/himanshu.uppal/" rel="me" target="_self">Follow Me!</a></p></section> </aside><!-- #secondary -->
+</div> <!-- secondary container-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  --><!--</div>--></div><!-- #content -->
+</div>
+</div>
+
+  <!-- <div class="post-area">
+    <div class="container">
+      <div class="content">
+       <div class="primary-container">
+          <div class="posts">
+           
+            <div class="the-post">
+              <h2 class="post-title"><a href="">bcdbdjdb</a></h2>
+              <div class="post-meta">n jds</div>
+              <div class="post-body">
+                <div class="post-categories">
+                  Category:bdcj dbjs
+                  <i>
+                    
+                    <b><a href="">#dsjkn j</a></b>
+                    
+                  </i>
+                </div>
+                <div class="post-content">
+                  
+                 mbc jdsbbdsjdn
+				 fdv
+				 dfnf
+				 
+				 favd
+				 
+				 
+				 ddsvdvds
+				 datadc
+				 vd
+				 
+				 datasd
+				 c
+
+                </div>
+              </div>
+              <div class="post-share">
+                <a target="_blank" href="">
+            <i class="fa fa-facebook-square "  aria-hidden="true"> </i>
+          </a>&nbsp;
+        
+
+          <a target="_blank" href=""><i class="fa fa-twitter "  aria-hidden="true"> </i></a>&nbsp;
+      
+
+         
+
+          <a target="_blank" href=""><i class="fa fa-google-plus "  aria-hidden="true"> </i></a>&nbsp;
+        
+
+         
+
+              </div>
+              
+              <div class="post-footer"></div>
+            </div>
+            <hr style="color:#eee;">
+          
+         
+          </div>
+          <div class="pagination-links">
+            
+          </div>
+        </div>
+		
+         <div class="secondary-container">
+          <div class="sidebar">
+            <div class="sidebar-search-area">
+              <div class="search-input">
+                <form  method="post" href="" >
+                <input type="text" name="search" placeholder="Search blog ...">                
+              <input name="_token" type="hidden" value=""/>
+              </form>
+              </div>
+            </div>
+            
+            <div class="sidebar-content">
+              
+              <div class="categories-label">Categories</div>
+              
+              <div class="categories">
+                <ul class="categories-list">
+                </br>
+                  
+                  <li><a href="">#</a></li>
+                 
+                 
+                </ul>
+              </div>
+            </div>
+          
+            <!-- <div class="sidebar-content">
+              <div class="archives-label">Hello</div>
+              
+              <div class="years">
+                <div class="year">Year</div>
+                <div class="months">
+                  <ul>
+
+                  @foreach($months as $months)
+                  <li><a href="{{route('filterByCategory',[$category->id,$category->category])}}">{{$category->category}}</a></li>
+                  @endforeach                    
+                  </ul>
+                </div>
+                <div class="year">Year</div>
+                <div class="months">
+                  <ul>
+                    <li>#vhcj</li>
+                    <li>#dshcbj</li>
+                    <li>#djbcj</li>
+                    <li>#djcbh</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div> -->
+              <div class="sidebar-share">
+                Follow fvgvth @</br></br>
+ <a target="_blank" href="">
+            <i class="fa fa-facebook-square "  aria-hidden="true"> </i>
+          </a>&nbsp;
+        
+
+          <a target="_blank" href=""><i class="fa fa-twitter "  aria-hidden="true"> </i></a>&nbsp;
+      
+
+          <a target="_blank" href=""><i class="fa fa-instagram" ></i></a>&nbsp;&nbsp;
+
+
+          <a target="_blank" href=""><i class="fa fa-google-plus "  aria-hidden="true"> </i></a>&nbsp;
+        
+
+          <a target="_blank" href=""><i class="fa fa-youtube "  aria-hidden="true"> </i></a>&nbsp;
+       
+
+
+         
+              </div>
+            </div>
+            
+          </div>
+		  
+         </div>
+      </div>
+    </div> -->
+    
+	
+    <div class="footer-area">
+      <div class="container">
+        </br>
+        <div class="footer-tab">
+         <!-- <div class="profile-area-1">
+          <div class="profile-pic">
+            <img  src={{route('image', ['himanshu-profile-pic.jpg']) }}>
+          </div>
+          <div class="profile-content">
+            <span class="name"><b>Himanshu Uppal</b></span></br>
+            <span class="designation"><b>Student</b></span></br>
+            <span class="profile-share">
+              <a href=""><i class="fa fa-facebook-square " ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-instagram" ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-twitter" ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-linkedin-square" ></i></a>&nbsp;&nbsp;
+            </span>
+          </div>
+        </div>
+        <!-- <div class="profile-area-2">
+          <div class="profile-pic">
+            <img  src={{route('image', ['salonee-profile-pic.jpg']) }}>
+          </div>
+          <div class="profile-content">
+            <span class="name"><b>Salonee Sharma</b></span></br>
+            <span class="designation"><b>Student</b></span></br>
+            <span class="profile-share">
+              <a href=""><i class="fa fa-facebook-square " ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-instagram" ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-twitter" ></i></a>&nbsp;&nbsp;
+              <a href=""><i class="fa fa-linkedin-square" ></i></a>&nbsp;&nbsp;
+            </span>
+          </div>
+        </div> -->
+      </br>
+    </br>
+          
+        </div>
+      </br>
+        <div class="footer-tab">
+          <div class="footer-share-menu">
+        
+
+          <a target="_blank" href="">
+            <i class="fa fa-facebook-square "  aria-hidden="true"> </i>
+          </a>&nbsp;
+        
+
+          <a target="_blank" href=""><i class="fa fa-twitter "  aria-hidden="true"> </i></a>&nbsp;
+      
+
+          <a target="_blank" href=""><i class="fa fa-instagram" ></i></a>&nbsp;&nbsp;
+
+
+          <a target="_blank" href=""><i class="fa fa-google-plus "  aria-hidden="true"> </i></a>&nbsp;
+        
+
+          <a target="_blank" href=""><i class="fa fa-youtube "  aria-hidden="true"> </i></a>&nbsp;
+       
+
+         
+        
+
+      </div>
+     
+      
+          
+          
+        </div>
+        
+        <div class="footer-tab">
+        <div class="copyright">
+          Copyright © 2016 , vgr gg . All Rights Reserved .
+        </div>
+      </div>
+
+      </div>
+      
+      
+
+    </div>
+  
+    <script src={{ asset("js/myScript.js") }}></script>
+    </body>
+  </html>
+

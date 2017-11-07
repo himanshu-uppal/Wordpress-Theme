@@ -1,0 +1,294 @@
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 942px) and (max-width: 1170px) {
+    .container{
+        width:900px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .container{
+        width:100%;
+    }
+    .nav-area .nav-social-search{
+        display:none;
+
+    }
+    .post-content-area .primary-container{
+    width: 100%;
+    padding: 0 2% 2% 2%;
+    margin: 0 auto;
+    }
+    .post-content-area .secondary-container{
+    width: 100%;
+    padding: 0 2% 2% 2%;
+    margin: 0 auto;
+    }
+    .footer-area .footer-widget-content {
+    width: 100%;
+    /* float: left; */
+        text-align: center;
+    }
+    .recent-post-sidebar-image {
+        width: 20%;
+        float: left;
+        padding: 1%;
+    }
+    .recent-post-sidebar-title {
+        width: 80%;
+        float: right;
+        z-index: 1;
+
+    }
+    .social-widget li a {
+        width: 70px;
+        height: 70px;
+
+        line-height: 70px;
+    }
+    .slider-image {
+
+        height: 450px !important;
+    }
+
+    .slider-post-content {
+
+        top: 22%;
+
+    }
+    .popular-post-widget .popular-post-sidebar-content:not(.slick-active){
+
+    position: relative;
+    }
+    .popular-post-widget .popular-post-sidebar-content:not(.slick-active):before{
+
+
+    content:'';
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    }
+
+
+
+     .widget-area h2.widget-title:before, .widget-area h2.widget-title:after {
+
+        width: 30%;
+
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container{
+        width:100%;
+    }
+    .nav-area .nav-social-search{
+        display:none;
+
+    }
+    .post-content-area .primary-container{
+        width: 100%;
+        padding: 0 2% 2% 2%;
+        margin: 0 auto;
+    }
+    .post-content-area .secondary-container{
+        width: 100%;
+        padding: 0 2% 2% 2%;
+        margin: 0 auto;
+    }
+    .footer-area .footer-widget-content {
+        width: 100%;
+        /* float: left; */
+        text-align: center;
+    }
+    .recent-post-sidebar-image {
+        width: 20%;
+        float: left;
+        padding: 1%;
+    }
+
+    .social-widget li a {
+        width: 70px;
+        height: 70px;
+
+        line-height: 70px;
+    }
+    .slider-image {
+
+        height: 450px !important;
+    }
+
+    .slider-post-content {
+
+        top: 22%;
+
+    }
+
+
+
+
+
+
+    .recent-post-sidebar-title {
+        width: 75%;
+        float: right;
+        z-index: 1;
+
+    }
+    .post-meta-time:before, .post-meta-time:after {
+
+        width: 19%;
+
+    }
+
+     h2.widget-title:before,  h2.widget-title:after {
+
+        width: 16%;
+
+    }
+    .footer-share-menu {
+
+        /* margin: 0 auto; */
+        margin-top: 17%;
+    }
+
+    .post-content-area .primary-container .the-post .post-meta-text{
+        font-size:12px
+    }
+    .read-more-slider {
+        padding:2.5% 1.5% 2.5% 1.5%;
+
+        width: 100px;
+        margin-top: 14%;
+    }
+
+    .about-us-area img {
+        width: 150px;
+        border-radius: 50%;
+    }
+    .site-branding {
+
+        font-size: 15px;
+    }
+    .entry-title {
+
+        font-size: 27px;
+
+    }
+
+
+
+
+}
+@media only screen and (max-width: 479px) {
+    .header-area .site-branding {
+
+        font-size: 13px;
+    }
+    .entry-title {
+
+        font-size: 27px;
+
+    }
+    .footer-share-menu {
+
+        /* margin: 0 auto; */
+        margin-top: 17%;
+    }
+    .container{
+        width: 100%;
+    }
+    .nav-area .nav-social-search{
+        display:none;
+
+    }
+    .slider-image {
+
+        height: 400px !important;
+    }
+    .slider-post-content {
+
+        top: 31%;
+
+    }
+    .post-meta-time:after {
+        right: -25%;
+    }
+
+    /*.popular-post-widget .popular-post-sidebar-content:not(.slick-active){*/
+
+        /*position: relative;*/
+    /*}*/
+    /*.popular-post-widget .popular-post-sidebar-content:not(.slick-active):before{*/
+
+
+        /*content:'';*/
+        /*width:100%;*/
+        /*height:100%;*/
+        /*position: absolute;*/
+        /*background-color:rgba(0,0,0,0.5);*/
+    /*}*/
+
+
+
+    .container{
+        width:100%;
+    }
+    .post-content-area .primary-container{
+        width: 100%;
+        padding: 0 2% 2% 2%;
+        margin: 0 auto;
+    }
+    .post-content-area .secondary-container{
+        width: 100%;
+        padding: 0 2% 2% 2%;
+        margin: 0 auto;
+    }
+    .footer-area .footer-widget-content {
+        width: 100%;
+        /* float: left; */
+        text-align: center;
+    }
+    .recent-post-sidebar-image {
+        width: 20%;
+        float: left;
+        padding: 1%;
+    }
+    .recent-post-sidebar-title {
+        width: 75%;
+        float: right;
+        z-index: 1;
+
+    }
+
+    .slider-post-content p{
+        display: none;
+    }
+    .post-content-area .primary-container .the-post .post-meta-text{
+        font-size:12px
+    }
+    .read-more-slider {
+        padding: 2.5% 3.5% 3.5% 1.5%;
+
+        width: 100px;
+        margin-top: 14%;
+    }
+    .about-us-area img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+
+
+}
+
+
+
